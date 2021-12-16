@@ -1,68 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 html,
 body {
+	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
+}
+
+#root {
+	min-width: 320px;
+	max-width: 1081px;
+	margin: 0 auto;
+}
+
+/* TYPOGRAPHY */
+html {
 	font-family: 'Roboto';
-	font-size: medium;
+	font-size: 12px;
 }
-
-.row {
-	padding: 16px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+@media screen and (min-width: 320px) {
+	html {
+		font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1080 - 320)));
+	}
 }
-
-.column {
-	display: flex;
-	flex-direction: column;
-	margin: 0 16px;
-	justify-content: center;
-	align-items: flex-start;
+@media screen and (min-width: 1080px) {
+	html {
+		font-size: 20px;
+	}
 }
 
 h1 {
-	margin: 0 0 16px 0;
 	font-size: 2rem;
 }
-h2 {
-	margin: 0 0 12px 0;
-	font-size: 1.5rem;
+
+/* FLEX BOX*/
+.flex {
+	display: flex;
+	flex-wrap: wrap;
 }
-h3 {
-	margin: 0 0 8px 0;
-	font-size: 1.25rem;
+.row {
+	flex-direction: row;
+}
+.col {
+	flex-direction: column;
+}
+.align-center {
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.space-between {
+	justify-content: space-between;
 }
 
-.navbar {
+/* CARDS */
+.card {
+	flex-direction: column;
+	scroll-snap-align: center;
+	word-wrap: normal;
+}
+.snapscroll {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	min-height: 64px;
-	padding: 16px;
-	margin-bottom: 48px;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 1rem;
+
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none;
+}
+.snapscroll::-webkit-scrollbar {
+	display: none;
 }
 
-.logo {
-	display: flex;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-}
-
+/* BUTTON  */
 .btn {
 	background-color: #04bf55;
 	padding: 0.75em 2em;
 	text-decoration: none;
 	color: black;
+	font-size: 1rem;
 }
 
+/* DROPDOWN */
 .drop {
 	border: none;
 	border-bottom: black solid 2px;
 	width: 100%;
-	margin-top: 8px;
+	margin-top: 1em;
 	padding: 4px;
-	font-family: 'Roboto';
+	font-size: 1rem;
+}
+
+/* sections*/
+section {
+	padding: 16px;
+}
+
+#navbar {
+	min-height: 64px;
+	padding: 1rem;
+	margin-bottom: 48px;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	margin: 1em 0 0 0;
+	padding: 0;
 }

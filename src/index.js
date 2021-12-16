@@ -1,15 +1,17 @@
 import { render } from 'react-dom';
 import { Navbar } from './components/navbar';
-import { Indicator } from './components/indicator';
+import { Header } from './articles/header';
+import { Risks } from './articles/risks';
 
-function App() {
+const App = () => {
 	return (
 		<>
 			<Navbar />
-			<Indicator />
+			<Header />
+			<Risks />
 		</>
 	);
-}
+};
 
 // eslint-disable-next-line no-undef
 render(<App />, document.getElementById('root'));
