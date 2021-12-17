@@ -2,7 +2,7 @@ import { Indicator } from '../components/indicator';
 
 const Header = () => {
 	return (
-		<section className="flex space-between">
+		<section id="header" className="flex space-between">
 			<header>
 				<h1>Cyber Risiko Indikator</h1>
 				<h2>Abgestimmt auf Ihre Region und Branche</h2>

@@ -7,12 +7,6 @@ body {
 	padding: 0;
 }
 
-#root {
-	min-width: 320px;
-	max-width: 1081px;
-	margin: 0 auto;
-}
-
 /* TYPOGRAPHY */
 html {
 	font-family: 'Roboto';
@@ -37,6 +31,7 @@ h1 {
 .flex {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 1rem;
 }
 .row {
 	flex-direction: row;
@@ -53,14 +48,41 @@ h1 {
 .space-between {
 	justify-content: space-between;
 }
+.space-around {
+	justify-content: space-around;
+}
 
 /* CARDS */
 .card {
+	width: 280px;
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	scroll-snap-align: center;
 	word-wrap: normal;
+	padding: 1rem;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+		0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
+
+.card-image {
+	height: 200px;
+	width: 200px;
+	margin: auto;
+}
+.card-body {
+	margin: 0;
+}
+.no-shadow {
+	box-shadow: none;
+}
+.hover:hover {
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+		0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
 .snapscroll {
+	padding: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -74,6 +96,12 @@ h1 {
 }
 .snapscroll::-webkit-scrollbar {
 	display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+	.snapscroll {
+		flex-wrap: wrap;
+	}
 }
 
 /* BUTTON  */
@@ -95,20 +123,59 @@ h1 {
 	font-size: 1rem;
 }
 
-/* sections*/
+/* INDICATOR */
+#indicator > img {
+	width: 100%;
+}
+
+/* SECTIONS */
+
+#root {
+	margin: 100px 0 0 0;
+	padding: 0;
+	width: 100%;
+}
 section {
-	padding: 16px;
+	padding: 1rem;
+}
+
+.container {
+	min-width: 320px;
+	max-width: 1080px;
+	margin: 0 auto;
 }
 
 #navbar {
+	position: fixed;
+	top: 0;
+	background-color: white;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+#navbar-content {
+	min-width: 320px;
+	max-width: 1081px;
 	min-height: 64px;
-	padding: 1rem;
-	margin-bottom: 48px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
 }
 
 #logo {
 	display: flex;
 	align-items: center;
-	margin: 1em 0 0 0;
+	margin: 1em 0 0 1em;
 	padding: 0;
+}
+
+#navbar-btn {
+	margin-right: 1rem;
+}
+
+#risks {
+	padding-right: 0;
 }
