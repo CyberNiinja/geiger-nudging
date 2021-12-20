@@ -9,7 +9,7 @@ const Learning = () => {
 			<div className="snapscroll">
 				<Card
 					title="Beginner Cyber Range Challenges"
-					image="icons/beginner-cyber-range.png"
+					image="icons/beginner-cyber-range.svg"
 					flippable>
 					Hierbei wird dem Benutzer ein App präsentiert auf welchem dem Benutzer
 					Phishing-E-Mails und normale E-Mails in einem simulierten Postfach
@@ -21,7 +21,7 @@ const Learning = () => {
 				</Card>
 				<Card
 					title="Experiential Cybersecurity Escape Room"
-					image="icons/escape-room.png"
+					image="icons/escape-room.svg"
 					flippable>
 					Der FHNW Cybersecurity Escape Room2 ist ein storybasiertes virtuelles
 					Spiel zu den Themen physische Sicherheit, Passworthygiene,
@@ -34,7 +34,7 @@ const Learning = () => {
 				</Card>
 				<Card
 					title='"The value of the data" GDPR Quiz'
-					image="icons/quiz.png"
+					image="icons/quiz.svg"
 					flippable>
 					Das GDPR-Quiz (General Data Protection Regulation) der FHNW &quot;Der
 					Wert der Daten&quot; basiert auf einem für KKU angepassten
@@ -45,7 +45,7 @@ const Learning = () => {
 				</Card>
 				<Card
 					title='"Am I GDPR compliant?" GDPR Self-assessment'
-					image="icons/self-assesment.png"
+					image="icons/self-assesment.svg"
 					flippable>
 					Die FHNW &quot;Bin ich GDPR-konform?&quot; GDPR Self-assessment geht
 					von einem Tool aus, das Hochschulen bei der Beurteilung ihrer
@@ -63,7 +63,7 @@ const Learning = () => {
 				</Card>
 				<Card
 					title="CYSEC Mobile Learning"
-					image="icons/mobile-learning.png"
+					image="icons/mobile-learning.svg"
 					flippable>
 					Die CYSEC-Funktionalität basiert auf Mikro-Lernoptionen, die innerhalb
 					der App geöffnet werden können. Kleine selbstgesteuerte Lernlektionen
@@ -72,7 +72,7 @@ const Learning = () => {
 					Informationsfolien. Der Nutzer klickt sich dann linear durch diese
 					Folien, bis die Lektion beendet ist.
 				</Card>
-				<Card title="GDPR chatbot" image="icons/chatbot.png" flippable>
+				<Card title="GDPR chatbot" image="icons/chatbot.svg" flippable>
 					Der KPMG-Chatbot deckt das Thema GDPR ab und kann als ein von der
 					GEIGER-App empfohlenes Tool verwendet werden. Der GDPR-Chatbot ist so
 					konzipiert, dass er Antworten auf allgemeine Fragen zu GDPR gibt und

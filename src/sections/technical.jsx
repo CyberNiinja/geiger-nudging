@@ -10,7 +10,7 @@ const Technical = () => {
 			<div className="snapscroll">
 				<Card
 					title="Incident Reporting Tool"
-					image="icons/incident-reporting.png"
+					image="icons/incident-reporting.svg"
 					flippable>
 					Das Incident Reporting Tool meldet, wenn irgendwelche Vorfälle
 					aufkommen. Dabei wird dem KMU die Möglichkeit geboten den Vorfall zu
@@ -22,7 +22,7 @@ const Technical = () => {
 				</Card>
 				<Card
 					title="Betrugserkennung und Dokumentsammlung"
-					image="icons/betrugserkennung.png"
+					image="icons/betrugserkennung.svg"
 					flippable>
 					Die GEIGER Toolbox bietet eine Echtzeitlösung für die Erkennung von
 					Betrug, Transaktionsanomalien und verdächtigen Aktivitäten auf der
@@ -35,7 +35,7 @@ const Technical = () => {
 				</Card>
 				<Card
 					title="Mobile Securiy"
-					image="icons/mobile-security.png"
+					image="icons/mobile-security.svg"
 					flippable>
 					Das Mobile Security Tool schützt das Smartphone der Mitarbeitenden vor
 					Angriffen oder vor Downloads schädlicher Software, welche aus dem Netz
