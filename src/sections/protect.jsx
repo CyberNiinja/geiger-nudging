@@ -7,11 +7,11 @@ const Protect = () => {
 			<div className="flex space-around">
 				<Card
 					title="Ihre Mitarbeiter"
-					image="icons/employee.svg"
+					image="icons/employee.png"
 					styles="no-shadow"></Card>
 				<Card
 					title="Ihre Devices"
-					image="icons/devices.svg"
+					image="icons/devices.png"
 					styles="no-shadow"></Card>
 			</div>
 		</section>
