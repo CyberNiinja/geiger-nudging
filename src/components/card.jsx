@@ -9,7 +9,7 @@ const Card = ({ title, image, children, styles, flippable }) => {
 			{(!flippable || !flipped) && (
 				<>
 					<img className="card-image" src={image}></img>
-					<h4>{title}</h4>
+					<h4 className="card-title">{title}</h4>
 				</>
 			)}
 			{(!flippable || flipped) && <p className="card-body">{children}</p>}
