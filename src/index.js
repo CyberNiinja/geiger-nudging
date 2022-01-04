@@ -39,7 +39,7 @@ const App = () => {
 				<Header />
 				{sw ? one : two}
 				{!more && expander}
-				{more && (sw ? one : two)}
+				{more && (sw ? two : one)}
 			</div>
 		</>
 	);
