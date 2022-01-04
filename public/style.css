@@ -55,33 +55,9 @@ h1 {
 	font-size: 2rem;
 }
 
-/* FLEX BOX*/
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
-.row {
-	flex-direction: row;
-}
-.col {
-	flex-direction: column;
-}
-.align-center {
-	align-items: center;
-}
-.justify-center {
-	justify-content: center;
-}
-.space-between {
-	justify-content: space-between;
-}
-.space-around {
-	justify-content: space-around;
-}
-
 /* CARDS */
 .card {
+	flex-grow: none;
 	box-sizing: border-box;
 	width: 280px;
 	display: flex;
@@ -96,6 +72,7 @@ h1 {
 
 .card-image {
 	width: 200px;
+	height: 200px;
 	margin: auto;
 }
 .card-body {
@@ -113,6 +90,34 @@ h1 {
 	cursor: pointer;
 }
 
+/* FLEX BOX*/
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.row {
+	flex-direction: row;
+}
+.col {
+	flex-direction: column;
+}
+.align-center {
+	align-items: center;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-center {
+	justify-content: center;
+}
+.space-between {
+	justify-content: space-between;
+}
+.space-around {
+	justify-content: space-around;
+}
+
 .snapscroll {
 	box-sizing: border-box;
 	padding: 1rem;
@@ -123,7 +128,6 @@ h1 {
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	gap: 1rem;
-
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
 	scrollbar-width: none;
 }
@@ -161,7 +165,7 @@ h1 {
 }
 
 /* INDICATOR */
-#indicator > img {
+#riskVisual > svg {
 	width: 100%;
 }
 

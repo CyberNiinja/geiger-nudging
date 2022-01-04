@@ -23,14 +23,14 @@ const Learning = () => {
 					title="Experiential Cybersecurity Escape Room"
 					image="icons/escape-room.svg"
 					flippable>
-					Der FHNW Cybersecurity Escape Room2 ist ein storybasiertes virtuelles
+					Der FHNW Cybersecurity Escape Room ist ein storybasiertes virtuelles
 					Spiel zu den Themen physische Sicherheit, Passworthygiene,
 					Codesicherheit, Informationsentsorgung, Sicherung sensibler digitaler
-					Daten und Public Oversharing/Identitätsdiebstahl. Die Lernenden müssen
-					während des Spiels verschiedenen Hinweisen folgen und verschiedene
-					Rätsel lösen. In einer geführten Sitzung wird ein Trainer benötigt,
-					der Spielanweisungen und Unterstützung gibt und nach dem Spiel eine
-					Diskussion führt.
+					Daten und Public Oversharing / Identitätsdiebstahl. Die Lernenden
+					müssen während des Spiels verschiedenen Hinweisen folgen und
+					verschiedene Rätsel lösen. In einer geführten Sitzung wird ein Trainer
+					benötigt, der Spielanweisungen und Unterstützung gibt und nach dem
+					Spiel eine Diskussion führt.
 				</Card>
 				<Card
 					title='"The value of the data" GDPR Quiz'

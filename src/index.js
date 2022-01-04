@@ -10,7 +10,7 @@ import { Risks } from './sections/risks';
 import { Technical } from './sections/technical';
 
 const App = () => {
-	const sw = false;
+	const sw = true;
 	const [more, setMore] = useState(false);
 	const expander = (
 		<div id="more" className="flex justify-center">
@@ -22,14 +22,6 @@ const App = () => {
 			<Protect />
 			<Technical />
 			<Learning />
-			{!more && expander}
-			{more && (
-				<>
-					<Risks />
-					<Cost />
-					<Now />
-				</>
-			)}
 		</>
 	);
 
@@ -38,14 +30,6 @@ const App = () => {
 			<Risks />
 			<Cost />
 			<Now />
-			{!more && expander}
-			{more && (
-				<>
-					<Protect />
-					<Technical />
-					<Learning />
-				</>
-			)}
 		</>
 	);
 	return (
@@ -54,6 +38,8 @@ const App = () => {
 			<div className="container">
 				<Header />
 				{sw ? one : two}
+				{!more && expander}
+				{more && (sw ? one : two)}
 			</div>
 		</>
 	);
