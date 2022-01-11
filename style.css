@@ -188,6 +188,9 @@ section {
 #navbar-btn {
 	margin-right: 1rem;
 }
+#navbar-btn:hover {
+	cursor: pointer;
+}
 
 #risks {
 	padding-right: 0;
