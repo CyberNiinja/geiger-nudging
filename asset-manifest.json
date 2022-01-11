@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/geiger-nudging/static/js/main.ab6eebc7.js",
+    "main.js": "/geiger-nudging/static/js/main.ad4c27ea.js",
     "index.html": "/geiger-nudging/index.html",
-    "main.ab6eebc7.js.map": "/geiger-nudging/static/js/main.ab6eebc7.js.map"
+    "main.ad4c27ea.js.map": "/geiger-nudging/static/js/main.ad4c27ea.js.map"
   },
   "entrypoints": [
-    "static/js/main.ab6eebc7.js"
+    "static/js/main.ad4c27ea.js"
   ]
 }
