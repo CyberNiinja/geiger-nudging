@@ -52,7 +52,18 @@ html {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
+	margin-bottom: 0.25rem;
+}
+h2 {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+h3 {
+	margin-bottom: 4rem;
+}
+header > p {
+	margin-top: 0.5rem;
 }
 
 /* CARDS */
@@ -127,7 +138,7 @@ h1 {
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
-	gap: 1rem;
+	gap: 3rem;
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
 	scrollbar-width: none;
 }
@@ -153,13 +164,14 @@ h1 {
 .btn:hover {
 	background-color: #04bf55;
 }
+#download-btn > .btn {
+	display: inline-block;
+}
 
 /* DROPDOWN */
 .drop {
 	border: none;
-	border-bottom: black solid 2px;
 	width: 100%;
-	margin-top: 1em;
 	padding: 4px;
 	font-size: 1rem;
 }
@@ -188,9 +200,13 @@ section {
 #navbar-btn {
 	margin-right: 1rem;
 }
+#navbar-btn:hover {
+	cursor: pointer;
+}
 
 #risks {
 	padding-right: 0;
+	text-align: center;
 }
 
 .center-text {
@@ -207,4 +223,30 @@ section {
 #more > p:hover {
 	border-bottom: solid 1px;
 	cursor: pointer;
+}
+#logo {
+	cursor: default;
+}
+
+section {
+	margin-top: 8rem;
+}
+.locationIcon {
+	height: 1rem;
+	padding: 0.25rem;
+	margin-left: 0.5rem;
+}
+.locationIcon:hover {
+	cursor: pointer;
+}
+.dropContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: black solid 2px;
+	margin-top: 1em;
+}
+#regionDrop {
+	flex-grow: 1;
 }

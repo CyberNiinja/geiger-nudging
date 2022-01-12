@@ -2,7 +2,7 @@ const Cost = () => {
 	return (
 		<section id="cost">
 			<header>
-				<h3>Wie viel könnte mich als Kleinfirma ein solcher Angriff kosten</h3>
+				<h3>How much could such an attack cost a small enterprise</h3>
 			</header>
 			<main className="flex col align-center">
 				<svg
@@ -259,10 +259,9 @@ const Cost = () => {
 			</main>
 			<footer>
 				<p>
-					Die angezeigten Kosten stammen aus dem jährlichen IBM
-					Cost-of-Data-Breach Bericht und wurden skaliert um Kleinfirmen besser
-					zu repräsentieren. (avg. small-enterprises / avg. = (2.98/4.24) = 70%)
-					Source:{' '}
+					Costs shown are taken from IBMs annual Cost-of-Data-Breach report and
+					have been scaled down to better represent small enterprises.(avg.
+					small-enterprises / overall avg. = (2.98/4.24) = 70%) Source:{' '}
 					<a
 						className="sourcelink"
 						href="https://www.ibm.com/security/data-breach">

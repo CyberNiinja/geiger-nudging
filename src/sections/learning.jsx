@@ -11,73 +11,66 @@ const Learning = () => {
 					title="Beginner Cyber Range Challenges"
 					image="icons/beginner-cyber-range.svg"
 					flippable>
-					Hierbei wird dem Benutzer ein App präsentiert auf welchem dem Benutzer
-					Phishing-E-Mails und normale E-Mails in einem simulierten Postfach
-					präsentiert werden. Der Benutzer kann die E-Mails öffnen und wird dann
-					aufgefordert, zu beurteilen, ob die E-Mail legitim ist oder nicht. In
-					einem zweiten Schritt müssen die Benutzer in Form einer
-					Multiple-Choice-Eingabe die Gründe auswählen, warum sie eine E-Mail
-					für nicht legitim halten, z. B. verdächtige Kopfzeile, Absender usw.
+					Here, the user is presented with an app on which phishing emails and
+					normal emails are presented to the user in a simulated mailbox. The
+					user can open the emails and is then asked to judge whether the email
+					is legitimate or not. In a second step, users have to select the
+					reasons why they think an email is not legitimate, e.g. suspicious
+					header, sender, etc., in the form of a multiple-choice input.
 				</Card>
 				<Card
 					title="Experiential Cybersecurity Escape Room"
 					image="icons/escape-room.svg"
 					flippable>
-					Der FHNW Cybersecurity Escape Room ist ein storybasiertes virtuelles
-					Spiel zu den Themen physische Sicherheit, Passworthygiene,
-					Codesicherheit, Informationsentsorgung, Sicherung sensibler digitaler
-					Daten und Public Oversharing / Identitätsdiebstahl. Die Lernenden
-					müssen während des Spiels verschiedenen Hinweisen folgen und
-					verschiedene Rätsel lösen. In einer geführten Sitzung wird ein Trainer
-					benötigt, der Spielanweisungen und Unterstützung gibt und nach dem
-					Spiel eine Diskussion führt.
+					The FHNW Cybersecurity Escape Room is a story-based virtual game on
+					the topics of physical security, password hygiene, code security,
+					information disposal, securing sensitive digital data and public
+					oversharing / identity theft. Learners must follow various clues and
+					solve various puzzles during the game. In a guided session, a trainer
+					is required to provide game instructions and support and lead a
+					discussion after the game.
 				</Card>
 				<Card
 					title='"The value of the data" GDPR Quiz'
 					image="icons/quiz.svg"
 					flippable>
-					Das GDPR-Quiz (General Data Protection Regulation) der FHNW &quot;Der
-					Wert der Daten&quot; basiert auf einem für KKU angepassten
-					Storytelling- und Gamification-Ansatz. Es wird in einem Online-Format
-					eines storybasierten Quiz zu GDPR-relevanten Themen mit einer
-					Punktzahl realisiert, die am Ende unter den Spielern verglichen werden
-					kann.
+					FHNW&apos;s GDPR (General Data Protection Regulation) quiz &quot;The
+					Value of Data&quot; is based on a storytelling and gamification
+					approach adapted for MSE. It is realized in an online format of a
+					story-based quiz on GDPR-relevant topics with a score that can be
+					compared among the players at the end.
 				</Card>
 				<Card
 					title='"Am I GDPR compliant?" GDPR Self-assessment'
 					image="icons/self-assesment.svg"
 					flippable>
-					Die FHNW &quot;Bin ich GDPR-konform?&quot; GDPR Self-assessment geht
-					von einem Tool aus, das Hochschulen bei der Beurteilung ihrer
-					GDPR-Compliance unterstützt. Die FHNW hat ein einfach zu bedienendes
-					Tool für MSE-Inhaber entwickelt, um eine grundlegende
-					Selbstbeurteilung durchzuführen und das Bewusstsein für die
-					GDPR-Compliance als wichtigen Bereich der Compliance zu schärfen. Das
-					Tool zielt darauf ab, sowohl in der Anwendung als auch im gelieferten
-					Inhalt leicht verständlich zu sein und ist als Bildungsinstrument zu
-					betrachten, das keine Rechtsberatung bietet, sondern seinen Nutzern
-					hilft, Bereiche in ihren aktuellen Datenrichtlinien zu identifizieren,
-					die möglicherweise angegangen werden müssen, und vorschlägt,
-					Rechtsberatung in Anspruch zu nehmen, wenn der richtige Weg des
-					Handelns unklar bleibt.
+					The FHNW &quot;Am I GDPR compliant?&quot; GDPR Self-assessment takes
+					as its starting point a tool to help higher education institutions
+					assess their GDPR compliance. FHNW has developed an easy-to-use tool
+					for MSE holders to conduct a basic self-assessment and raise awareness
+					of GDPR compliance as an important area of compliance. The tool aims
+					to be easy to understand in both its use and the content delivered and
+					should be viewed as an educational tool that does not provide legal
+					advice, but helps its users identify areas in their current data
+					policies that may need to be addressed and suggests seeking legal
+					advice if the right course of action remains unclear.
 				</Card>
 				<Card
 					title="CYSEC Mobile Learning"
 					image="icons/mobile-learning.svg"
 					flippable>
-					Die CYSEC-Funktionalität basiert auf Mikro-Lernoptionen, die innerhalb
-					der App geöffnet werden können. Kleine selbstgesteuerte Lernlektionen
-					zu grundlegenden Cybersicherheitsthemen wie Passwörtern usw. öffnen
-					sich und präsentieren dem Nutzer zunächst Multiple-Choice-Fragen sowie
-					Informationsfolien. Der Nutzer klickt sich dann linear durch diese
-					Folien, bis die Lektion beendet ist.
+					The CYSEC functionality is based on micro-learning options that can be
+					opened within the app. Small self-paced learning lessons on basic
+					cybersecurity topics such as passwords, etc. open and initially
+					present the user with multiple-choice questions as well as information
+					slides. The user then clicks linearly through these slides until the
+					lesson is completed.
 				</Card>
 				<Card title="GDPR chatbot" image="icons/chatbot.svg" flippable>
-					Der KPMG-Chatbot deckt das Thema GDPR ab und kann als ein von der
-					GEIGER-App empfohlenes Tool verwendet werden. Der GDPR-Chatbot ist so
-					konzipiert, dass er Antworten auf allgemeine Fragen zu GDPR gibt und
-					allgemeine Informationen zu GDPR-Begriffen und -Prozessen
-					bereitstellt.
+					The KPMG chatbot covers the topic of GDPR and can be used as a tool
+					recommended by the GEIGER app. The GDPR chatbot is designed to provide
+					answers to general questions about GDPR and to provide general
+					information about GDPR terms and processes.
 				</Card>
 			</div>
 		</section>

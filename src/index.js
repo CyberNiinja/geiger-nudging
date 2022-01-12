@@ -8,13 +8,23 @@ import { Now } from './sections/now';
 import { Protect } from './sections/protect';
 import { Risks } from './sections/risks';
 import { Technical } from './sections/technical';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
-	const sw = true;
+	// Proposal for Implementation of Stat Tracking
+	// on page load call API
+	// API will create user session & save timestamp of session creation
+	// when Download button is clicked API is called again and session is marked as "succesful"
+	// when session is cancelled without clicking of download button session is marked as "failed"
+	// that can be the same API as the one that provides the RISK indication
+	// FOLLOWING Metrics should be recorded:
+	// how much impact does the indicator result have on conversion rate.
+	// how much impact motivation level have on conversion rate?
+
 	const [more, setMore] = useState(false);
 	const expander = (
 		<div id="more" className="flex justify-center">
-			<p onClick={() => setMore(true)}>Mehr Informationen</p>
+			<p onClick={() => setMore(true)}>More information</p>
 		</div>
 	);
 	const one = (
@@ -33,15 +43,35 @@ const App = () => {
 		</>
 	);
 	return (
-		<>
+		<Router>
 			<Navbar />
 			<div className="container">
 				<Header />
-				{sw ? one : two}
-				{!more && expander}
-				{more && (sw ? two : one)}
+				<Routes>
+					<Route
+						exact
+						path="/"
+						element={
+							<>
+								{one}
+								{!more && expander}
+								{more && two}
+							</>
+						}
+					/>
+					<Route
+						path="/norm"
+						element={
+							<>
+								{two}
+								{!more && expander}
+								{more && one}
+							</>
+						}
+					/>
+				</Routes>
 			</div>
-		</>
+		</Router>
 	);
 };
 

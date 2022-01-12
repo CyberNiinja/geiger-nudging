@@ -8,13 +8,13 @@ const Indicator = () => {
 
 	// --- REGION ---
 	// selected region
-	const [region, setRegion] = useState('');
+	const [region, setRegion] = useState({ id: 0, name: 'Tessin' });
 	// array that contains all available industries
 	const [regionList, setRegionList] = useState();
 
 	// --- INDUSTRIES ---
 	// selected trade sector
-	const [trade, setTrade] = useState('');
+	const [trade, setTrade] = useState({ id: 0, name: 'Technology & Media' });
 	// array that contains all available trade sectors
 	const [tradeList, setTradeList] = useState();
 
@@ -32,21 +32,21 @@ const Indicator = () => {
 		setRegionList([
 			{ id: 0, name: 'Tessin' },
 			{ id: 1, name: 'Romandie' },
-			{ id: 2, name: 'Zentralschweiz' },
-			{ id: 3, name: 'Nordwestschweiz' },
-			{ id: 4, name: 'Ostschweiz' },
+			{ id: 2, name: 'Central Switzerland' },
+			{ id: 3, name: 'Northwestern Switzerland' },
+			{ id: 4, name: 'Eastern Switzerland' },
 		]);
 
 		// fetch trade sectors from api
 		// callAPI('/trades').then((response) => setTradeList(response.items));
 		setTradeList([
-			{ id: 0, name: 'Technologie & Medien' },
-			{ id: 1, name: 'Pharma & Chemie' },
-			{ id: 2, name: 'Finanzsektor' },
-			{ id: 3, name: 'Immobilien' },
-			{ id: 4, name: 'Gesundheitswesen' },
-			{ id: 5, name: 'Detailhandel' },
-			{ id: 6, name: 'Staat & öffentlicher Sektor' },
+			{ id: 0, name: 'Technology & Media' },
+			{ id: 1, name: 'Pharmaceuticals & Chemicals' },
+			{ id: 2, name: 'Finance sector' },
+			{ id: 3, name: 'Real Estate' },
+			{ id: 4, name: 'Healthcare' },
+			{ id: 5, name: 'Retail ' },
+			{ id: 6, name: 'Public sector' },
 		]);
 	}, []);
 
@@ -57,22 +57,47 @@ const Indicator = () => {
 		// 	setRisk(response.risk)
 		// );
 		const devRisks = ['VERY LOW', 'LOW', 'HIGH', 'VERY HIGH'];
-		const r = Math.floor(Math.random() * 4);
-		setRisk(devRisks[r]);
+		const riskValues = [
+			[3, 1, 4, 4, 3, 4, 4], // Tessin
+			[4, 1, 3, 4, 3, 1, 1], // Romandie
+			[1, 1, 2, 4, 3, 2, 2], // Zentralschweiz
+			[3, 3, 4, 2, 4, 1, 2], // Nordwestschweiz
+			[2, 2, 1, 4, 3, 1, 2], // Ostschweiz
+		];
+		setRisk(
+			devRisks[trade && region ? riskValues[region.id][trade.id] - 1 : 0]
+		);
 	}, [trade, region]);
 
 	// apply changes in industry or region dropdown
 	const onChange = (event) => {
-		if (event.target.id === 'tradeDrop') setTrade(event.target.value);
-		else setRegion(event.target.value);
+		event.preventDefault();
+		if (event.target.id === 'tradeDrop') {
+			setTrade(tradeList[event.target.value]);
+		} else if (event.target.id === 'regionDrop') {
+			setRegion(regionList[event.target.value]);
+		}
 	};
 
 	// --- Display ---
 	return (
 		<div className="flex col align-center">
 			<RiskVisual risk={risk} />
-			{dropdown('regionDrop', region, onChange, regionList)}
-			{dropdown('tradeDrop', trade, onChange, tradeList)}
+			<div className="dropContainer">
+				{dropdown('regionDrop', region, onChange, regionList)}
+				{
+					<img
+						className="locationIcon"
+						alt="request location"
+						src="icons/546310.png"
+						onClick={() =>
+							confirm('Would you like to let us know your location?')
+						}></img>
+				}
+			</div>
+			<div className="dropContainer">
+				{dropdown('tradeDrop', trade, onChange, tradeList)}
+			</div>
 		</div>
 	);
 };
@@ -81,8 +106,8 @@ const dropdown = (id, value, onChange, items) => (
 	<select id={id} className="drop" value={value} onChange={onChange}>
 		{items ? (
 			items.map((el) => (
-				<option key={el.id} value={el.value ?? el.name}>
-					{el.name}
+				<option key={el.id} value={el.id}>
+					{el.name}{' '}
 				</option>
 			))
 		) : (

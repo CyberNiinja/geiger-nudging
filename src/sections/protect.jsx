@@ -3,14 +3,14 @@ import { Card } from '../components/card';
 const Protect = () => {
 	return (
 		<section id="protect">
-			<h3>Wen schützt die GEIGER Toolbox?</h3>
+			<h3>Who does the GEIGER Toolbox protect?</h3>
 			<div className="flex space-around">
 				<Card
-					title="Ihre Mitarbeiter"
+					title="Your employees"
 					image="icons/employee.png"
 					styles="no-shadow"></Card>
 				<Card
-					title="Ihre Devices"
+					title="Your devices"
 					image="icons/devices.png"
 					styles="no-shadow"></Card>
 			</div>
