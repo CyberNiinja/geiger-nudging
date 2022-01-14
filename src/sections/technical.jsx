@@ -4,7 +4,7 @@ const Technical = () => {
 	return (
 		<section id="technical">
 			<h3>
-				Which technical tools are recommended to me by GEIGER&apos;s toolbox?
+				Which TECHNICAL TOOLS are recommended to me by GEIGER&apos;s toolbox?
 			</h3>
 			<div className="snapscroll">
 				<Card

@@ -4,7 +4,7 @@ const Learning = () => {
 	return (
 		<section id="learning">
 			<h3>
-				Welche learning Tools werden mir von der Toolbox von GEIGER empfohlen?
+				Wich LEARNING TOOLS are recommended to me by GEIGER&apos;s Toolbox?
 			</h3>
 			<div className="snapscroll">
 				<Card

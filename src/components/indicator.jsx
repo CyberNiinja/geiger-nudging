@@ -84,36 +84,40 @@ const Indicator = () => {
 		<div className="flex col align-center">
 			<RiskVisual risk={risk} />
 			<div className="dropContainer">
-				{dropdown('regionDrop', region, onChange, regionList)}
-				{
-					<img
-						className="locationIcon"
-						alt="request location"
-						src="icons/546310.png"
-						onClick={() =>
-							confirm('Would you like to let us know your location?')
-						}></img>
-				}
+				<select
+					id="regionDrop"
+					className="drop"
+					value={region.id}
+					onChange={onChange}>
+					{regionList?.map((el) => (
+						<option key={el.id} value={el.id}>
+							{el.name}{' '}
+						</option>
+					))}
+				</select>
+				<img
+					className="locationIcon"
+					alt="request location"
+					src="icons/546310.png"
+					onClick={() =>
+						confirm('Would you like to let us know your location?')
+					}></img>
 			</div>
 			<div className="dropContainer">
-				{dropdown('tradeDrop', trade, onChange, tradeList)}
+				<select
+					id="tradeDrop"
+					className="drop"
+					value={trade.id}
+					onChange={onChange}>
+					{tradeList?.map((el) => (
+						<option key={el.id} value={el.id}>
+							{el.name}{' '}
+						</option>
+					))}
+				</select>
 			</div>
 		</div>
 	);
 };
-
-const dropdown = (id, value, onChange, items) => (
-	<select id={id} className="drop" value={value} onChange={onChange}>
-		{items ? (
-			items.map((el) => (
-				<option key={el.id} value={el.id}>
-					{el.name}{' '}
-				</option>
-			))
-		) : (
-			<option>loading</option>
-		)}
-	</select>
-);
 
 export { Indicator };

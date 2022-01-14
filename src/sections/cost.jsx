@@ -2,7 +2,7 @@ const Cost = () => {
 	return (
 		<section id="cost">
 			<header>
-				<h3>How much could such an attack cost a small enterprise</h3>
+				<h3>How much could such an attack COST a small enterprise</h3>
 			</header>
 			<main className="flex col align-center">
 				<svg

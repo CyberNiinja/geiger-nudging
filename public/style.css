@@ -70,6 +70,7 @@ header > p {
 .card {
 	flex-grow: none;
 	box-sizing: border-box;
+	min-width: 280px;
 	width: 280px;
 	display: flex;
 	flex-direction: column;
@@ -204,8 +205,7 @@ section {
 	cursor: pointer;
 }
 
-#risks {
-	padding-right: 0;
+#risk-scroll {
 	text-align: center;
 }
 
