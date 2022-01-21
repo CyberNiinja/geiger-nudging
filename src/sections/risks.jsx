@@ -1,5 +1,6 @@
 import { Card } from '../components/card';
 
+// A section on the risks that small business can be exposed to
 const Risks = () => {
 	return (
 		<section id="risks">

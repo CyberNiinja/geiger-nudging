@@ -1,5 +1,5 @@
 import { Card } from '../components/card';
-
+// A section on the learning tools of the GEIGER Toolbox
 const Learning = () => {
 	return (
 		<section id="learning">

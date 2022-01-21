@@ -1,3 +1,4 @@
+// The section about the cost of a cyber attack for small enterprises
 const Cost = () => {
 	return (
 		<section id="cost">

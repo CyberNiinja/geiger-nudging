@@ -26,6 +26,8 @@ const App = () => {
 			<p onClick={() => setMore(true)}>More information</p>
 		</div>
 	);
+
+	//The variant for integrated regulation persona
 	const one = (
 		<>
 			<Protect />
@@ -33,7 +35,7 @@ const App = () => {
 			<Learning />
 		</>
 	);
-
+	// The variant for externally regulated behaviour persona
 	const two = (
 		<>
 			<Risks />
@@ -41,6 +43,9 @@ const App = () => {
 			<Now />
 		</>
 	);
+
+	// --- Display --
+	// Route based switching for variants
 	return (
 		<Router>
 			<div id="navbar">

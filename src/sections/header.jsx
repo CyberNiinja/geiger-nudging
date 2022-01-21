@@ -1,5 +1,5 @@
 import { Indicator } from '../components/indicator';
-
+// The header section that contains the risk indicator
 const Header = () => {
 	return (
 		<section id="header" className="flex space-between">

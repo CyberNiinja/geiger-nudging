@@ -1,3 +1,4 @@
+// SVG Risk Indicator with different look based on the risk it displays
 const RiskVisual = ({ risk }) => {
 	return (
 		<div id="riskVisual">

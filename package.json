@@ -1,7 +1,7 @@
 {
 	"name": "cyberriskindicator",
 	"homepage": "https://cyberniinja.github.io/geiger-nudging",
-	"version": "0.0.0",
+	"version": "1.3.0",
 	"private": true,
 	"dependencies": {
 		"react": "^17.0.2",

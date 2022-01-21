@@ -1,5 +1,6 @@
 import { Card } from '../components/card';
 
+// A section on the technical tools of the GEIGER Toolbox
 const Technical = () => {
 	return (
 		<section id="technical">

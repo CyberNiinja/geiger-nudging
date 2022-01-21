@@ -1,3 +1,4 @@
+// A section on why now is the perfect time to improve one's cybersecurity
 const Now = () => {
 	return (
 		<section id="now">

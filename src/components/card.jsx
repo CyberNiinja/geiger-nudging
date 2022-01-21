@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// A flippable Card
 const Card = ({ title, image, children, styles, flippable }) => {
 	const [flipped, flip] = useState(false);
 	return (

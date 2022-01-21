@@ -1,5 +1,5 @@
 import { Card } from '../components/card';
-
+// A section on who the Toolbox tries to protect
 const Protect = () => {
 	return (
 		<section id="protect">
