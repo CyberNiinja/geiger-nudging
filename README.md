@@ -1,6 +1,4 @@
-# geiger-nudging
-
-FHNW IP5 Project "Sicherheitsratgeber"
+# Cyber risk indicator
 
 ## About
 
